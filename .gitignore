@@ -7,3 +7,4 @@ dist/styles/*.sass
 dist/scripts/*.coffee
 bootstrap.local
 config/exports
+/log
