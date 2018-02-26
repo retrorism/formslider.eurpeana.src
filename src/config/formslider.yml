@@ -3,12 +3,6 @@ version: v1
 imagePath: "images/formslider/v1/"
 # image path: from slide || from questionaire
 
-validation:
-  data-msg-required: "required"
-  data-msg-minlength: "to short"
-  data-msg-maxlength: "to long"
-  data-msg-email: "invalid email"
-
 slides:
 -
   role: question
@@ -17,15 +11,15 @@ slides:
   answers:
   -
     id: a_1
-    image: "1_1.png"
+    image: "1_1.jpg"
     label:  "20. century"
   -
     id: a_2
-    image: "1_2.png"
+    image: "1_2.jpg"
     label:  "18. century"
   -
     id: a_3
-    image: "1_3.png"
+    image: "1_3.jpg"
     label:  "16. century"
 
 -
@@ -35,15 +29,12 @@ slides:
   answers:
   -
     id: a_1
-    image: "2_1.png"
     label:  "\"Über die neuere deutsche Literatur\""
   -
     id: a_2
-    image: "2_2.png"
     label:  "\"Alte Volkslieder\""
   -
     id: a_3
-    image: "2_3.png"
     label:  "\"Von deutscher Art und Kunst\""
 
 -
@@ -53,15 +44,12 @@ slides:
   answers:
   -
     id: a_1
-    image: "3_1.png"
     label:  "Letter-Novel"
   -
     id: a_2
-    image: "3_2.png"
     label:  "Educational-Novel"
   -
     id: a_3
-    image: "3_3.png"
     label:  "Poetry"
 
 -
@@ -89,12 +77,12 @@ slides:
   answers:
   -
     id: a_1
-    image: "5_2.png"
+    image: "5_1.jpg"
     label:  "Wolfgang Amadeus Mozart"
   -
     id: a_2
-    image: "5_1.png"
-    label:  "Johann Wolfgang Goethe"
+    image: "5_2.jpg"
+    label:  "Johann Wolfgang von Goethe"
   -
     id: a_3
     image: "5_3.png"
@@ -107,15 +95,12 @@ slides:
   answers:
   -
     id: a_1
-    image: "6_2.png"
     label:  "1823"
   -
     id: a_2
-    image: "6_1.png"
     label:  "1790"
   -
     id: a_3
-    image: "6_3.png"
     label:  "1785"
 
 -

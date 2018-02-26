@@ -2,7 +2,6 @@ class @ProgressBarPercent extends AbstractFormsliderProgressBar
   set: (indexFromZero, percent) =>
     # load initial value from dom element or 1
     startFrom = parseInt(@progressText.text()) || 1
-    console.log '!!', startFrom
     $(Counter: startFrom)
       .animate(
         { Counter: percent }

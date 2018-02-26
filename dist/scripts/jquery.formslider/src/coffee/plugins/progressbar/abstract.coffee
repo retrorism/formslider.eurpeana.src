@@ -17,7 +17,7 @@ class @AbstractFormsliderProgressBar extends AbstractFormsliderPlugin
       'contact'
       'confirmation'
     ]
-    dataKeyForMaxLength: 'progressbar-longest-path'
+    #dataKeyForMaxLength: 'progressbar-longest-path'
 
   init: =>
     @on('after.next', =>
@@ -88,6 +88,7 @@ class @AbstractFormsliderProgressBar extends AbstractFormsliderPlugin
     @set(indexFromZero, percent)
 
   shouldBeVisible: (slide) =>
+    console.log $(slide).data('role'), @config.hideOnRoles, slide
     ! ($(slide).data('role') in @config.hideOnRoles)
 
   hide: =>

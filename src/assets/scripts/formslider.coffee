@@ -40,7 +40,6 @@
 
         # prev/next controller plugin
         { class: 'HistoryJsController'      }
-        { class: 'OrderByIdController'      }
         { class: 'NativeOrderController'    }
 
         #view
@@ -59,16 +58,17 @@
         # progressbar
         {
           class: 'ProgressBarPercent'
-          dontCountOnRoles: [
-            'result'
-            'loader'
-            'confirmation'
-          ]
-          hideOnRoles: [
-            'result'
-            'loader'
-            'confirmation'
-          ]
+          config:
+            dontCountOnRoles: [
+              'result'
+              'loader'
+              'confirmation'
+            ]
+            hideOnRoles: [
+              'result'
+              'loader'
+              'confirmation'
+            ]
         }
 
         # form

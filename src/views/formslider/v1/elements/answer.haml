@@ -1,5 +1,5 @@
 
-.answer{}
+.answer{class:"#{ if @config.image then 'with-image' else 'without-image' }"}
   %label.inner-answer{:for => @config.inputName}
 
     - if @config.image?
