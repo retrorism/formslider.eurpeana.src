@@ -2,10 +2,10 @@ development: &default
   # haml @globals (default)
   globals:
     robots:      'index,follow,noodp,noydir'
-    title:       'slidevision.eurpeana'
+    title:       'europeana.slidevision.io'
     canonical:   'https://www.tomhanoldt.info/index.html'
     language:    'en'
-    description: 'slidevision.eurpeana integrates a modified Flexslider with logical slide pages that can have features and behaviours provided by plugins.'
+    description: 'europeana.slidevision.io integrates a modified Flexslider with logical slide pages that can have features and behaviours provided by plugins.'
     keywords:    'jquery formslider flexslider slideshow questionaire europeana slidevision'
 
     footer:
