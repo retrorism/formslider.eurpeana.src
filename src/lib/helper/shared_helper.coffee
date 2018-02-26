@@ -2,6 +2,7 @@ fs = require 'fs'
 
 module.exports =
   copyright: (who) ->
+    return "© #{new Date().getFullYear()}" unless who 
     "© #{new Date().getFullYear()} by #{who}"
 
   list_partials_for: (relative_view_path) ->

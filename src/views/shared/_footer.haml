@@ -1,10 +1,6 @@
 .github
   - github_image = @image_tag('social/github.png', alt: 'code available on github', title: 'code available on github')
-  = @link_to github_image + 'code available on github ', 'https://github.com/formslider/formslider.github.io.src', {target: '_blank'}
-
-  - travis_image = @image_tag('https://travis-ci.org/formslider/formslider.github.io.src.svg?branch=master', alt: 'travis build status', title: 'travis build status')
-  .travis
-    = @link_to travis_image, 'https://travis-ci.org/formslider/formslider.github.io.src', {target: '_blank'}
+  = @link_to github_image + 'code available on github ', 'https://github.com/formslider/formslider.eurpeana.src', {target: '_blank'}
 
 .text
   This website is hand made with the
@@ -13,11 +9,8 @@
   = @link_to 'jquery.formslider', 'https://github.com/formslider/jquery.formslider', {target: '_blank'}
   and brought to you with love by
   = @link_to('www.creative-workflow.berlin', 'https://www.creative-workflow.berlin/company.html', {target: '_blank'}) + '.'
-  The page load is below
-  = @globals.footer.page_size
-  at all =)
 
 .copyright
-  = @copyright 'Tom Hanoldt - Creative-Workflow'
+  = @copyright()
 
   = ' - ' + @link_to 'imprint', 'https://www.creative-workflow.berlin/imprint.html', {class: 'fancybox', 'data-fancybox-type': 'ajax'}
