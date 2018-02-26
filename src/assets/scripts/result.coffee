@@ -20,8 +20,7 @@ class @ResultHandler extends AbstractFormsliderPlugin
     for key, value of @config.matrix
       @correct++ if key of memory && memory[key].id == value
 
-    console.log @correct
-
+    return
 
   printResults: (event, current, direction, next) =>
     result = "You have <b>#{@correct}</b> from <b>#{@max}</b> questions successfully answered.<br><br>"
