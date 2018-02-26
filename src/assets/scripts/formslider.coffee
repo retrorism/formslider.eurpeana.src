@@ -61,7 +61,6 @@
           config:
             dontCountOnRoles: [
               'result'
-              'loader'
               'confirmation'
             ]
             hideOnRoles: [
