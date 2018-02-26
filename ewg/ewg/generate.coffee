@@ -9,9 +9,6 @@ gulp.task 'generate', (cb) ->
                 'compile-coffee:generate'
               ],
               'compile-haml:generate'
-              [
-                'services-analytics:generate'
-              ],
               cb)
 
 

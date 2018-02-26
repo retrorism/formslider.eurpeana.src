@@ -13,4 +13,4 @@ test:
 
 production:
   <<: *default
-  enabled: true
+  enabled: false

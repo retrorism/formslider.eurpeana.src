@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# set app variables
-#GITHUB_IO_URL='https://formslider.github.io'
-#GITHUB_IO_ORIGIN='git@github.com:formslider/formslider.github.io.git'
-#DIST_FOLDER='dist'
-
 # set config variables
 export TERMINAL_APP_LOG_ENABLED=0
 
