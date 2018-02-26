@@ -1,0 +1,140 @@
+version: v1
+
+imagePath: "images/formslider/v1/"
+# image path: from slide || from questionaire
+
+validation:
+  data-msg-required: "required"
+  data-msg-minlength: "to short"
+  data-msg-maxlength: "to long"
+  data-msg-email: "invalid email"
+
+slides:
+-
+  role: question
+  headline: "In what <b>century</b> the era of Sturm und Drang started?"
+  id: q_1
+  answers:
+  -
+    id: a_1
+    image: "1_1.png"
+    label:  "20. century"
+  -
+    id: a_2
+    image: "1_2.png"
+    label:  "18. century"
+  -
+    id: a_3
+    image: "1_3.png"
+    label:  "16. century"
+
+-
+  role: question
+  headline: "Which work by <b>Johann Gottfried Herder</b> was decisive for the beginning of Sturm und Drang?"
+  id: q_2
+  answers:
+  -
+    id: a_1
+    image: "2_1.png"
+    label:  "\"Über die neuere deutsche Literatur\""
+  -
+    id: a_2
+    image: "2_2.png"
+    label:  "\"Alte Volkslieder\""
+  -
+    id: a_3
+    image: "2_3.png"
+    label:  "\"Von deutscher Art und Kunst\""
+
+-
+  role: question
+  headline: "What new literary genre was <b>created</b> during the Sturm und Drang?"
+  id: q_3
+  answers:
+  -
+    id: a_1
+    image: "3_1.png"
+    label:  "Letter-Novel"
+  -
+    id: a_2
+    image: "3_2.png"
+    label:  "Educational-Novel"
+  -
+    id: a_3
+    image: "3_3.png"
+    label:  "Poetry"
+
+-
+  role: question
+  headline: "In what <b>linguistic space</b> was the Sturm und Drang confined?"
+  id: q_4
+  answers:
+  -
+    id: a_1
+    image: "4_2.png"
+    label:  "German-speaking realm"
+  -
+    id: a_2
+    image: "4_1.png"
+    label:  "Spanish-speaking realm"
+  -
+    id: a_3
+    image: "4_3.png"
+    label:  "French-speaking realm"
+
+-
+  role: question
+  headline: "<b>Who</b> was one of the most important representatives of Sturm und Drang?"
+  id: q_5
+  answers:
+  -
+    id: a_1
+    image: "5_2.png"
+    label:  "Wolfgang Amadeus Mozart"
+  -
+    id: a_2
+    image: "5_1.png"
+    label:  "Johann Wolfgang Goethe"
+  -
+    id: a_3
+    image: "5_3.png"
+    label:  "Christoph Columbus"
+
+-
+  role: question
+  headline: "<b>When</b> was the end of Sturm und Drang?"
+  id: q_6
+  answers:
+  -
+    id: a_1
+    image: "6_2.png"
+    label:  "1823"
+  -
+    id: a_2
+    image: "6_1.png"
+    label:  "1790"
+  -
+    id: a_3
+    image: "6_3.png"
+    label:  "1785"
+
+-
+  role: loader
+  headline: "Please wait!"
+  subHeadline: "Calculating your results"
+  image: "loader-sun.gif"
+  finish_text: "Yay, it worked!"
+  finish_image: "green-tick-big.png"
+  api_url: "/store.php"
+
+-
+  role: confirmation
+  headline: "Thank you =)"
+  content: "You results are saved anonymous for comparison. <br><br>Press <a href='javascrpt: return false' class='next-button'>next</a> to see your results!"
+
+-
+  role: result
+  headline: "Results"
+
+  links:
+    - '<a href="https://github.com/formslider" target="_blank">jquery.foemslider</a>'

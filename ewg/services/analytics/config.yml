@@ -1,0 +1,16 @@
+development: &default
+  enabled: false
+  source: 'dist'
+  target: 'dist'
+  selector: '*.html'
+  name: 'google'
+  code: "<script async src='https://www.googletagmanager.com/gtag/js?id=UA-65996211-4'></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'UA-65996211-4');</script>"
+  params:
+    GOOGLE_UA_ID: 'UA-65996211-4'
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  enabled: true

@@ -1,0 +1,27 @@
+{
+  "name": "public",
+  "version": "0.0.0",
+  "authors": [
+    "Tom Hanoldt <tom@vreative-workflow.berlin>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tooltipster": "^4.1.6",
+    "fancybox": "^2.1.5",
+    "jquery": ">=1.8.0",
+    "creative-workflow.sass": "*",
+    "formslider.animate.css": "*",
+    "formslider.jquery.tracking": "*",
+    "formslider.dramatic.loader": "*",
+    "jquery.formslider": "*",
+    "formslider.history.js": "*"
+  }
+}

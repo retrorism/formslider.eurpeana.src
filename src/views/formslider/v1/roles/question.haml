@@ -1,0 +1,10 @@
+.headline= @config.headline
+
+- if @config.subHeadline?
+  .sub-headline= @config.subHeadline
+
+%input.question-input{type: "hidden", id: "#{@config.id}", name: "#{@config.id}", value: @config.headline}
+
+.answers
+  - for answer in @config.answers
+    = @render_question_answer(answer, @config)

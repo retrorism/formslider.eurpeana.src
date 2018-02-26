@@ -1,0 +1,70 @@
+
+@mixin with-body-class($class)
+  .#{$class} &
+    @content
+
+@mixin with-html-class($class)
+  .#{$class} &
+    @content
+
+@mixin clearfix
+  &:before, &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+@mixin hidden-text
+  white-space: nowrap
+  overflow: hidden
+  text-indent: 500%
+
+@mixin force-hidden
+  display: none !important
+  visibility: hidden !important
+  position: absolute !important
+  z-index: -1000 !important
+
+@mixin placeholder
+  &::-moz-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+@mixin text-input-types
+  &[type=text], &[type=tel], &[type=number], &[type=email]
+    @content
+
+@mixin headlines
+  h1, h2, h3, h4, h5, h6
+    @content
+
+@mixin bold
+  font-weight: bold
+
+@mixin no-select
+  user-select: none
+  -moz-user-select: none
+  -khtml-user-select: none
+  -webkit-user-select: none
+  -o-user-select: none
+
+@mixin no-outline
+  &:focus
+    outline: none
+
+@mixin no-pointer-events
+  pointer-events: none
+
+@mixin zoom-on-hover($scale: 1.03)
+  +inline-block
+  cursor: pointer
+  +transition(transform 0.3s ease-out)
+  -webkit-transform: translateZ(0)
+  -webkit-font-smoothing: antialiased
+  &:hover, &:focus, &:active
+    +transform(scale($scale))

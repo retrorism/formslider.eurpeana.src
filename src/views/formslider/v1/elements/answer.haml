@@ -1,0 +1,14 @@
+
+.answer{}
+  %label.inner-answer{:for => @config.inputName}
+
+    - if @config.image?
+      = @formslider_image @config.image, alt: @config.label, title: @config.label, class: 'image'
+
+    %input{ id: @config.inputName, name: @config.inputName, value: @config.label, type: 'radio' }
+
+    .text{ class: @config.inputName }= @config.label
+
+  - # very strange variable scoing behaviour occured here, so we reset
+  - # -> see form_slider_helper
+  - @config = {}

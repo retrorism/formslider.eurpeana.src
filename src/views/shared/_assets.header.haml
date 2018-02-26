@@ -1,0 +1,35 @@
+%title
+  = @globals.title
+
+= @meta_tag 'charset', 'utf-8'
+= @meta_tag_http 'X-UA-Compatible', 'IE=edge'
+
+= @meta_tag 'viewport', 'width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes'
+= @meta_tag 'apple-mobile-web-app-status-capable', 'yes'
+= @meta_tag 'apple-mobile-web-app-status-bar-style', 'black'
+
+= @meta_tag 'robots',      @globals.robots
+= @meta_tag 'description', @globals.description
+= @meta_tag 'keywords',    @globals.keywords
+
+= @link_tag '/favicon.ico', 'icon', 'image/x-icon'
+= @link_tag '/favicon.ico', 'shortcut icon', 'image/x-icon'
+
+%link{rel: 'icon', type: 'image/png', sizes: '16x16',   href: '/favicon-16x16.png'}
+%link{rel: 'icon', type: 'image/png', sizes: '32x32',   href: '/favicon-32x32.png'}
+%link{rel: 'icon', type: 'image/png', sizes: '96x96',   href: '/favicon-96x96.png'}
+%link{rel: 'icon', type: 'image/png', sizes: '144x144', href: '/favicon-144x144.png'}
+%link{rel: 'apple-touch-icon',        sizes: '60x60',   href: '/favicon-60x60.png'}
+%link{rel: 'apple-touch-icon',        sizes: '144x144', href: '/favicon-144x144.png'}
+%link{rel: 'manifest',  href: '/manifest.json'}
+
+= @meta_tag 'theme-color', '#2f373e'
+= @meta_tag 'msapplication-navbutton-color', '#2f373e'
+= @meta_tag 'msapplication-TileColor', '#ffffff'
+= @meta_tag 'msapplication-TileImage', '/favicon-144x144.png'
+
+= @canonical_tag  @globals.canonical
+= @opengraph_tags @globals.get('opengraph_metatag_data')
+= @twitter_tags   @globals.get('twitter_metatag_data')
+
+= @inline_stylesheet_link_tag 'style.css'
