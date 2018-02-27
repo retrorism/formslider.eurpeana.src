@@ -1,0 +1,32 @@
+.info
+  +inline-block
+  padding: 20px 10px 0 10px
+  margin: 20px 10px 20px 10px
+  border: 1px solid $page-color-gray
+  border-radius: 10px
+  background-color: $page-color-gray-light
+  +transition
+  cursor: pointer
+  +relative
+  &:hover
+    background-color: #fff
+
+  &:before
+    +absolute
+    content: 'i'
+    font-weight: bold
+    font-size: 20px
+    +block
+    top: 10px
+    left: 10px
+    color: $page-color-gray
+    border: 2px solid $page-color-gray
+    border-radius: 20px
+    width: 20px
+    height: 20px
+
+  a
+  img
+    border-radius: 5px
+  .text
+    padding: 10px

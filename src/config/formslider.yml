@@ -7,6 +7,11 @@ slides:
 -
   role: question
   headline: "In what <b>century</b> the era of Sturm und Drang started?"
+  infos:
+    image: "q_1_testimage.jpg"
+    url: "europeana.formslider.io"
+    text: "This is the info text, all infos are optional"
+
   id: q_1
   answers:
   -
@@ -26,6 +31,11 @@ slides:
   role: question
   headline: "Which work by <b>Johann Gottfried Herder</b> was decisive for the beginning of Sturm und Drang?"
   id: q_2
+  infos:
+    image: "q_2_testimage.jpg"
+    url: "www.blub.de"
+    text: "This is the 2. info text, all infos are optional"
+
   answers:
   -
     id: a_1

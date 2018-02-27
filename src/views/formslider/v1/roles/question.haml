@@ -3,6 +3,20 @@
 - if @config.subHeadline?
   .sub-headline= @config.subHeadline
 
+- if @config?.infos
+  .info
+    - if @config.infos?.url
+      - image = @formslider_image(@config.infos.image)
+      = @link_to image, @config.infos.url, {target: '_blank'}
+
+    - if !@config.infos?.url && @config.infos?.image
+      = @formslider_image(@config.infos.image)
+
+    - if @config.infos?.text
+      .text
+        = @config.infos.text
+
+
 %input.question-input{type: "hidden", id: "#{@config.id}", name: "#{@config.id}", value: @config.headline}
 
 .answers
