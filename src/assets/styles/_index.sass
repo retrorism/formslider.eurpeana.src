@@ -5,40 +5,11 @@
 i
   font-style: italic
   color: #999
-  
+
 .article
   opacity: 0
 
-  &.documentation
-    .image
-      max-width: 100px
-      float: left
-      margin: 3px 20px 20px 0
-    ul
-      float: left
-      margin-top: 0px
-
-  &.contact
-    .image
-      max-width: 100px
-      float: left
-      margin: 0 20px 20px 0
-
-    p
+  &.about
+    .europeana-logo
+      text-align: center
       margin-top: 30px
-    ul
-      clear: both
-      margin-left: 30px
-
-  &.features
-    .row
-      +make-row
-    ul
-      +make-xs-column(12)
-      +make-sm-column(4)
-      margin-bottom: 15px
-      li
-        background: url('/images/formslider/v1/check-green.png') no-repeat left center
-        padding: 0 0 5px 30px
-        &:before
-          display: none
