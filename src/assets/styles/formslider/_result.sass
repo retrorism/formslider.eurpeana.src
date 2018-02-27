@@ -1,5 +1,42 @@
 +with-formslider-slide('result')
-  .sub-headline
+  .result-headline
     font-size: 20px
-    color: black
-    line-height: 1.4
+    color: $page-color-gray-dark
+    margin: 10px 0 50px 0
+
+  .result
+    border: 1px solid $page-color-gray-dark
+    cursor: pointer
+    border-radius: 10px
+    margin: 15px 0
+    padding: 15px 15px 0 25px
+    +transition
+    +relative
+    &:hover
+      background-color: white
+
+    .sub-headline
+      font-size: 18px
+      color: $page-color-gray-dark
+      line-height: 1.4
+      padding: 0 0 10px 0
+      font-weight: 600
+      text-decoration: underline
+
+    .info
+      color: $page-color-gray
+      
+    &.right, &.false
+      &:before
+        +absolute
+        top: 10px
+        left: 10px
+    &.right
+      border-color: $page-color-green
+      &:before
+        content: '\2705'
+
+    &.false
+      border-color: $page-color-red
+      &:before
+        content: '\274C'

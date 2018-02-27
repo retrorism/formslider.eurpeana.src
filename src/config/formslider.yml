@@ -5,14 +5,15 @@ imagePath: "images/formslider/v1/"
 
 slides:
 -
+  id: q_1
   role: question
   headline: "In what <b>century</b> the era of Sturm und Drang started?"
+  resultText: 'This will only be visible on result page for question 1'
   infos:
     image: "q_1_testimage.jpg"
     url: "europeana.formslider.io"
     text: "This is the info text, all infos are optional"
 
-  id: q_1
   answers:
   -
     id: a_1
@@ -28,9 +29,10 @@ slides:
     label:  "16. century"
 
 -
+  id: q_2
   role: question
   headline: "Which work by <b>Johann Gottfried Herder</b> was decisive for the beginning of Sturm und Drang?"
-  id: q_2
+  resultText: 'This will only be visible on result page for question 2'
   infos:
     image: "q_2_testimage.jpg"
     url: "www.blub.de"
@@ -120,12 +122,6 @@ slides:
   image: "loader-sun.gif"
   finish_text: "Yay, it worked!"
   finish_image: "green-tick-big.png"
-  api_url: "/store.php"
-
--
-  role: confirmation
-  headline: "Thank you =)"
-  content: "You results are saved anonymous for comparison. <br><br>Press <a href='javascrpt: return false' class='next-button'>next</a> to see your results!"
 
 -
   role: result

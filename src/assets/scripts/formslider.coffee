@@ -118,13 +118,8 @@
         {
           class: 'DirectionPolicyByRole'
           config:
-
             loader:
               commingFrom: ['question']
-              goingTo: ['confirmation']
-
-            confirmation:
-              commingFrom: ['loader']
               goingTo: ['result']
 
             result:

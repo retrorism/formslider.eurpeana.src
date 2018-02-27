@@ -23,9 +23,7 @@ class @ResultHandler extends AbstractFormsliderPlugin
     return
 
   printResults: (event, current, direction, next) =>
-    result = "You have <b>#{@correct}</b> from <b>#{@max}</b> questions successfully answered.<br><br>"
-
-    result += "Here are the correct answers: <br><br>"
+    result = "<div class='result-headline'>You have <b>#{@correct}</b> from <b>#{@max}</b> questions successfully answered.</div>"
 
     memory = @formslider.plugins.get('AnswerMemory').memoryByQuestionId
 
@@ -34,12 +32,16 @@ class @ResultHandler extends AbstractFormsliderPlugin
       question = $('.headline', slide).text()
       answer   = $(".text.#{value}", slide).text()
       correct  = key of memory && memory[key].id == value
-      if correct
-        correct = 'right'
-      else
-        correct = 'false'
+      additionalResult = $(slide).data('result-text')
+
+      correct = if correct then 'right' else 'false'
+
+      result+= "<div class='result #{correct}'>"
 
       result+= "<div class='sub-headline'>#{question}</div>"
-      result+= "you were #{correct}, correct answer: #{answer}<br><br><br>"
+      result+= "Correct answer: <b>#{answer}</b><br><br>"
+      result+= "<div class='info'>#{additionalResult}</div>" if additionalResult
+
+      result+= "</div>"
 
     $('.text', next).html(result)

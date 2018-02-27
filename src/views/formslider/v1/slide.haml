@@ -1,7 +1,8 @@
 
 - infosClass = if @config?.infos then 'with-infos' else 'without-infos'
+- resultText = if @config?.resultText then @config.resultText else ''
 
-.slide{'data-role': @config.role, 'data-id': @config.id, class: infosClass}
+.slide{'data-role': @config.role, 'data-id': @config.id, class: infosClass, 'data-result-text': resultText}
 
   = @render_formslider_role(@config.role, @config)
 
