@@ -1,5 +1,10 @@
+
 %form
   .formslider-wrapper.loading
+    .transport
+      = @link_to '&lt; prev', 'javascript: return false', class: 'prev-button button'
+      = @link_to 'next &gt;', 'javascript: return false', class: 'next-button button'
+
     .formslider
       = @render_formslider('src/config/formslider.yml')
 

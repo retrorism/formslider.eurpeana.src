@@ -79,6 +79,13 @@
         { class: 'InputNormalizer'          }
         { class: 'InputFocus'               }
         { class: 'FormSubmission'           }
+        {
+          class: 'DoOnEvent'
+          config:
+            'before.loader': (plugin) ->
+              $('.next-button, .prev-button', '.transport').slideUp()
+        }
+
 
         # navigation
         { class: 'NavigateOnClick'          }
