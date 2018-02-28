@@ -1,4 +1,3 @@
-# coffeelint: disable=max_line_length
 #= include ../../../dist/scripts/jquery.formslider/src/coffee/jquery.formslider.coffee
 
 #= include ../../../dist/scripts/jquery.animate.css/src/jquery.animate.css.coffee
@@ -10,13 +9,9 @@
 
 #= include result.coffee
 
-# coffeelint: enable=max_line_length
-
 (($) ->
 
   Raven.context( ->
-    $.debug(1)
-
     window.formslider = $('.formslider-wrapper').formslider(
       version: 1.1
 
@@ -35,7 +30,6 @@
         answerSelectedClass: 'selected'
 
       plugins: [
-        { class: 'AnswerMemory'             }
         { class: 'ResultHandler'            }
 
         # prev/next controller plugin
@@ -44,7 +38,6 @@
 
         #view
         { class: 'JqueryAnimate'            }
-
         { class: 'SlideVisibility'          }
         { class: 'LazyLoad'                 }
         { class: 'EqualHeight'              }
@@ -52,7 +45,7 @@
         {
           class: 'ScrollUp'
           config:
-              scrollUpOffset: 40
+              scrollUpOffset: 50
         }
 
         # progressbar
@@ -61,12 +54,11 @@
           config:
             dontCountOnRoles: [
               'result'
-              'confirmation'
+              'loader'
             ]
             hideOnRoles: [
               'result'
               'loader'
-              'confirmation'
             ]
         }
 
@@ -78,7 +70,6 @@
         { class: 'InputSync'                }
         { class: 'InputNormalizer'          }
         { class: 'InputFocus'               }
-        { class: 'FormSubmission'           }
         {
           class: 'DoOnEvent'
           config:
@@ -98,7 +89,7 @@
           class: 'JqueryTracking'
           config:
             initialize: true
-            cookiePath: 'formslider.github.io'
+            cookiePath: 'europeana.slidevision.io'
             adapter: [
               {
                 class: 'JqueryTrackingGAnalyticsAdapter'
