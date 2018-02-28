@@ -1,7 +1,0 @@
-#!/bin/bash
-
-#command-info: serve this repo in production mode
-
-source bootstrap
-
-ewg serve $@

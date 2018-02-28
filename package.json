@@ -3,8 +3,8 @@
   "description": "dsfdsfdsf",
   "license": "MIT",
   "scripts": {
-    "generate": "gulp generate-and-exit --production",
     "serve": "gulp serve",
+    "build": "bower install && gulp generate-and-exit --production",
     "#postinstall - doesnt work with travis": "bower install"
   },
   "dependencies": {
