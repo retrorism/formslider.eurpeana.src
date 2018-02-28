@@ -31,7 +31,7 @@
 
       plugins: [
         
-        #custom plugins
+        # custom plugins
         { class: 'ResultHandler'            }
         {
           class: 'DoOnEvent'
