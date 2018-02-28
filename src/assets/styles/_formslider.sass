@@ -17,14 +17,14 @@ $answer-color: $page-color-gray-dark
   +relative
   max-width: 800px
   margin: 20px auto 0 auto
+  +transition
   &:after
     opacity: 0
     transition: opacity .2s linear
 
   &.loading
-    +with-formslider-slide
-      opacity: 0
-      transition: opacity .2s linear
+    opacity: 0
+    transition: opacity .2s linear
 
     &:after
       +inline-block
