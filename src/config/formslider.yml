@@ -7,36 +7,41 @@ slides:
 -
   id: q_1
   role: question
-  headline: "In what <b>century</b> the era of Sturm und Drang started?"
-  resultText: 'This will only be visible on result page for question 1'
+  headline: "In what <b>century</b> did the era of <i>Sturm und Drang</i> begin?"
+  resultText: "Interestingly, the artists did not describe themselves as <i>Sturm und Drang</i> artists - the label was invented some thirty years after, in the 1820s."
   infos:
-    image: "q_1_testimage.jpg"
-    url: "europeana.formslider.io"
-    text: "This is the info text, all infos are optional"
+    image: "MDZ-Reader Band Sturm und Drang Klinger, Friedrich Maximilian von Sturm und Drang Klinger, Friedrich M_cover.jpg"
+    url: "https://www.europeana.eu/portal/en/record/9200386/BibliographicResource_3000045497829.html?q=sturm+und+drang+klinger"
+    text: "<caption><p>Bookplate from the play <em>Sturm und Drang</em> by Friedrich Maximilian von Klinger.</p>
+      <p>Available from: <a target='_blank' href='http://reader.digitale-sammlungen.de/de/fs1/object/display/bsb11019675_00001.html'>Bayerische Staatsbibliothek München</a></p>
+      <p>Reuse info: Limited reuse / <a href='http://rightsstatements.org/page/NoC-NC/1.0/' target='_blank' rel='xhv:license http://www.europeana.eu/schemas/edm/rights'>NoC-NC</a></p>"
 
   answers:
   -
     id: a_1
     image: "1_1.jpg"
-    label:  "20. century"
+    label:  "20th century"
   -
     id: a_2
     image: "1_2.jpg"
-    label:  "18. century"
+    label:  "18th century"
   -
     id: a_3
     image: "1_3.jpg"
-    label:  "16. century"
+    label:  "16th century"
 
 -
   id: q_2
   role: question
-  headline: "Which work by <b>Johann Gottfried Herder</b> was decisive for the beginning of Sturm und Drang?"
-  resultText: 'This will only be visible on result page for question 2'
+  headline: "Which important contemporary work by <b>Johann Gottfried Herder</b> documented the ideas and aesthetics behind <i>Sturm und Drang</i>?"
+  #resultText: "In <i>Von deutscher Art und Kunst</i> Herder writes mainly about literature, but if you examine the <a href='a target='_blank' href='https://www.europeana.eu/portal/en/record/92097/BibliographicResource_1000126663927.html'>book</a>, you will also find contributions by Johann Wolfgang Goethe, Paolo Frisi (about architecture) and Justus Möser (about history)."
+  resultText: "In <i>Von deutscher Art und Kunst</i> Herder writes mainly about literature, but if you examine the book, you will also find contributions by Johann Wolfgang Goethe, Paolo Frisi (about architecture) and Justus Möser (about history)."
   infos:
-    image: "q_2_testimage.jpg"
-    url: "www.blub.de"
-    text: "This is the 2. info text, all infos are optional"
+    image: "92062_BibliographicResource_1000126195877.jpeg"
+    url: "https://www.europeana.eu/portal/en/record/92062/BibliographicResource_1000126195877.html"
+    text: "<caption><p>Engraving of Johann Gottfried Herder, presumably by Thomas Trotter</p>
+      <p>Available from: <a target='_blank' href='http://www.bildarchivaustria.at/Pages/Search/Result.aspx?p_eBildansicht=2&p_ItemID=1'>Österreichische Nationalbibliothek</a></p>
+      <p>Reuse info: Free Reuse / <a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='xhv:license http://www.europeana.eu/schemas/edm/rights'>Public Domain</a></p></caption>"
 
   answers:
   -
@@ -51,23 +56,40 @@ slides:
 
 -
   role: question
-  headline: "What new literary genre was <b>created</b> during the Sturm und Drang?"
+  headline: "Which popular literary genre was adopted from the English-speaking realm during the <i>Sturm und Drang</i> era?"
+  resultText: "By writing a novel in the form of letters, the author could dive deeply into the ever-changing emotions of the fictional letter-writer.<br />
+    Most letter novels, however, <i>did</i> in fact also have a strong educational component, often using the experiences of the protagonist to inspire moral lessons."
   id: q_3
+  infos:
+    image: "2064134_Museu_ProvidedCHO_museum_digital_909__technical_number_.jpeg"
+    url: "http://europeana.eu/portal/record/2064134/Museu_ProvidedCHO_museum_digital_909__technical_number_.html"
+    text: "<caption><p>\"A visit to the woman of the lime trees\". Werthers Besuch bei der Frau \"unter der Linde\" - Thomas Ryder (1746-1810); Charles Reuben Ryley (1746-1798).</p>
+      <p>Available from: <a target='_blank' href='http://www.museum-digital.de/hessen/index.php?t=objekt&oges=909'>Frankfurter Goethe-Haus</a></p>
+      <p>Reuse info: Free Reuse / <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/' target='_blank' rel='xhv:license http://www.europeana.eu/schemas/edm/rights'>CC BY-NC-SA</a></p></caption>"
+  
   answers:
   -
     id: a_1
-    label:  "Letter-Novel"
+    label:  "Epistolary Novel"
   -
     id: a_2
-    label:  "Educational-Novel"
+    label:  "Educational Novel"
   -
     id: a_3
     label:  "Poetry"
 
--
+- 
   role: question
-  headline: "In what <b>linguistic space</b> was the Sturm und Drang confined?"
+  headline: "In what <b>linguistic space</b> did <i>Sturm und Drang</i> take place?"
+  resultText: "Literary historians sometimes speak of <i>linguistic spaces</i> instead of countries, because many educated Europeans were able to read and speak more than one language, regardless of where they lived. More importantly, however, national borders (and the idea of the nation) were still taking shape, so much so that countries like Italy and Germany did not yet exist yet."
   id: q_4
+  infos:
+    image: "2022705_lod_oai_bvpb_mcu_es_462558_ent1_edit.jpeg"
+    url: "https://www.europeana.eu/portal/en/record/2022705/lod_oai_bvpb_mcu_es_462558_ent1.html"
+    text: "<caption><span about='http://data.europeana.eu/item/2022705/lod_oai_bvpb_mcu_es_462558_ent1'><span property='dc:title'>Europe in 1813, by Pierre Lapié (Paris)</span>. </p>
+    <p>Available from: <a target='_blank' href='http://bvpb.mcu.es/es/consulta/registro.cmd?id=462558'>Biblioteca Virtual del Patrimonio Bibliográfico</a></p>
+    <p>Reuse info: Free Reuse / <a href='https://creativecommons.org/licenses/by/4.0/' rel='xhv:license http://www.europeana.eu/schemas/edm/rights'>CC BY</a></p></caption>"
+  
   answers:
   -
     id: a_1
@@ -84,8 +106,15 @@ slides:
 
 -
   role: question
-  headline: "<b>Who</b> was one of the most important representatives of Sturm und Drang?"
+  headline: "<b>Who</b> of the following historical figures is considered to be one of the most important representatives of <i>Sturm und Drang</i>?"
+  resultText: "Although Goethe later distanced himself from the ideas of the movement and the novel that made him a literary celebrity, his epistolary novel <i>Die Leiden des Jungen Werthers</i> (The Sorrows of Young Werther) is considered to be a central work in the <i>Sturm und Drang</i> movement."
   id: q_5
+  infos:
+    image: "Symphony_n°_25_in_G_[...]Mozart_Wolfgang_bpt6k88030541_edit.png"
+    url: "https://www.europeana.eu/portal/en/record/2059219/data_sounds_ark__12148_cb382464513.html"
+    text: "<em>Mozart's Symfony n° 25 in G is a very well-known piece from the <i>Sturm und Drang</i> era. In later versions of this software, it will be possible to listen to sound samples sourced from the Europeana API as well.</p>
+      <p>Available from: <a target='_blank' href='http://gallica.bnf.fr/ark:/12148/bpt6k88030541'>Bibliothèque nationale de France</a></p>
+      <p>Reuse info: Free Reuse / <a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='xhv:license http://www.europeana.eu/schemas/edm/rights'>Public Domain</a></p></caption>"
   answers:
   -
     id: a_1
@@ -102,8 +131,16 @@ slides:
 
 -
   role: question
-  headline: "<b>When</b> was the end of Sturm und Drang?"
+  headline: "<b>When</b> was the end of <i>Sturm und Drang</i>?"
+  resultText: "Although its influence can be traced well into the following centuries, art historians tend to agree that the <em>Sturm und Drang</em> era only lasted for two decades."
   id: q_6
+  infos:
+    image: "Decoration_zu_der_Schluss_Scene_[...]Thiele_Karl_btv1b8437657x.jpeg"
+    url: "http://www.europeana.eu/portal/en/record/9200365/BibliographicResource_1000055734877.html"
+    text: "<caption><p>Decoration zu der Schluss Scene der Oper die Zauberflöte. Engraving by Karl Friedrich Thiele / Karl Friedrich Schinkel</p>
+      <p>Available from: <a target='_blank' href='http://gallica.bnf.fr/ark:/12148/btv1b8437657x/f1.item'>Bibliothèque nationale de France</a></p>
+      <p>Reuse info: Free Reuse / <a href='http://creativecommons.org/publicdomain/mark/1.0/' target='_blank' rel='xhv:license http://www.europeana.eu/schemas/edm/rights'>Public Domain</a></p><caption>"
+  
   answers:
   -
     id: a_1
