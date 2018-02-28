@@ -30,14 +30,30 @@
         answerSelectedClass: 'selected'
 
       plugins: [
-        
+
         # custom plugins
         { class: 'ResultHandler'            }
         {
           class: 'DoOnEvent'
           config:
-            'before.loader': (plugin) ->
-              $('.next-button, .prev-button', '.transport').slideUp()
+            # hide back button on ready
+            'ready': (plugin) ->
+              $('.prev-button', '.transport').stop().slideUp(50)
+
+            'after': (plugin) ->
+              currentIndex = plugin.formslider.index()
+              # hide prev button on first slide
+              if currentIndex == 0
+                $('.prev-button', '.transport').stop().slideUp(50)
+              else
+                $('.prev-button', '.transport').stop().slideDown(50)
+
+              # hide next button on non question side
+              questionCount = plugin.slideByRole('question').length
+              if currentIndex < questionCount - 1
+                $('.next-button', '.transport').stop().slideDown(50)
+              else
+                $('.next-button', '.transport').stop().slideUp(50)
         }
 
         # prev/next controller plugins
@@ -49,7 +65,6 @@
         { class: 'SlideVisibility'          }
         { class: 'LazyLoad'                 }
         { class: 'EqualHeight'              }
-        { class: 'LoadingState'             }
         {
           class: 'ScrollUp'
           config:
@@ -58,7 +73,7 @@
 
         # progressbar plugin
         {
-          class: 'ProgressBarPercent'
+          class: 'ProgressBarSteps'
           config:
             dontCountOnRoles: [
               'result'
@@ -117,11 +132,9 @@
             result:
               goingTo: ['none']
         }
+        { class: 'LoadingState'             }
       ]
+
     )
-
-
   )
-
-
 )(jQuery)
