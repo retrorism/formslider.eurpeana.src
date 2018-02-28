@@ -38,28 +38,20 @@
           config:
             # hide back button on ready
             'ready': (plugin) ->
-              $('.prev-button', '.transport').stop().slideUp()
+              $('.prev-button', '.transport').stop().fadeOut(50)
 
             'after': (plugin) ->
-              # hide prev next buttons on non question slides
-              if $(plugin.slideByIndex()).data('role') != 'question'
-                $('.prev-button', '.transport').stop().slideUp()
-                $('.next-button', '.transport').stop().slideUp()
-                return
-
               currentIndex = plugin.formslider.index()
-              # hide prev button on first slide
-              if currentIndex == 0
-                $('.prev-button', '.transport').stop().slideUp()
+              if currentIndex == 0 || $(plugin.slideByIndex()).data('role') != 'question'
+                $('.prev-button', '.transport').stop().fadeOut(50)
               else
-                $('.prev-button', '.transport').stop().slideDown()
+                $('.prev-button', '.transport').stop().fadeIn(50)
 
-              # hide next button on non question sLide
               questionCount = plugin.slideByRole('question').length
-              if currentIndex < questionCount - 1
-                $('.next-button', '.transport').stop().slideDown()
+              if currentIndex >= questionCount - 1 || $(plugin.slideByIndex()).data('role') != 'question'
+                $('.next-button', '.transport').stop().fadeOut(50)
               else
-                $('.next-button', '.transport').stop().slideUp()
+                $('.next-button', '.transport').stop().fadeIn(50)
         }
 
         # prev/next controller plugins
