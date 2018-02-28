@@ -18,7 +18,7 @@ class @ResultHandler extends AbstractFormsliderPlugin
   updateResults: (event, memory) =>
     @correct = 0
     for questionId, answerId of @config.matrix
-      @correct++ if memory?[questionId].id == answerId
+      @correct++ if memory?[questionId]?.id == answerId
 
     return
 
@@ -28,12 +28,12 @@ class @ResultHandler extends AbstractFormsliderPlugin
     memory = @formslider.plugins.get('AnswerMemory').memoryByQuestionId
 
     for questionId, answerId of @config.matrix
-      correct  = memory?[questionId].id == answerId
-      
+      correct  = memory?[questionId]?.id == answerId
+
       slide    = @slideById(questionId)
       question = $('.headline', slide).text()
       answer   = $(".text.#{answerId}", slide).text()
-      additionalResultText = $(slide).data('result-text')
+      info     = $(slide).data('result-text')
 
       successClass = if correct then 'right' else 'false'
 
@@ -41,7 +41,7 @@ class @ResultHandler extends AbstractFormsliderPlugin
 
       result+= "<div class='sub-headline'>#{question}</div>"
       result+= "Correct: <b>#{answer}</b><br><br>"
-      result+= "<div class='info'>#{additionalResultInfo}</div>" if additionalResultText
+      result+= "<div class='info'>#{info}</div>" if info
 
       result+= "</div>"
 
