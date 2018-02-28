@@ -30,13 +30,21 @@
         answerSelectedClass: 'selected'
 
       plugins: [
+        
+        #custom plugins
         { class: 'ResultHandler'            }
+        {
+          class: 'DoOnEvent'
+          config:
+            'before.loader': (plugin) ->
+              $('.next-button, .prev-button', '.transport').slideUp()
+        }
 
-        # prev/next controller plugin
+        # prev/next controller plugins
         { class: 'HistoryJsController'      }
         { class: 'NativeOrderController'    }
 
-        #view
+        # view plugins
         { class: 'JqueryAnimate'            }
         { class: 'SlideVisibility'          }
         { class: 'LazyLoad'                 }
@@ -48,7 +56,7 @@
               scrollUpOffset: 50
         }
 
-        # progressbar
+        # progressbar plugin
         {
           class: 'ProgressBarPercent'
           config:
@@ -62,7 +70,7 @@
             ]
         }
 
-        # form
+        # form plugins
         { class: 'AnswerMemory'             }
         { class: 'AnswerClick'              }
         { class: 'JqueryValidate'           }
@@ -70,19 +78,12 @@
         { class: 'InputSync'                }
         { class: 'InputNormalizer'          }
         { class: 'InputFocus'               }
-        {
-          class: 'DoOnEvent'
-          config:
-            'before.loader': (plugin) ->
-              $('.next-button, .prev-button', '.transport').slideUp()
-        }
 
-
-        # navigation
+        # navigation plugins
         { class: 'NavigateOnClick'          }
         { class: 'NavigateOnKey'            }
 
-        # tracking
+        # tracking plugins
         { class: 'TrackUserInteraction'     }
         { class: 'TrackSessionInformation'  }
         {
@@ -97,14 +98,14 @@
             ]
         }
 
-        # loader
+        # loader handler
         {
           class: 'DramaticLoader'
           config:
             duration: 600
         }
 
-        # generic
+        # generic plugins
         { class: 'AddSlideClasses'          }
         {
           class: 'DirectionPolicyByRole'
