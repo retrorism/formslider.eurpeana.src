@@ -4,7 +4,7 @@ formsliderBasePath = formsliderConfig = undefined
 
 module.exports =
   render_formslider: (configFile) ->
-    formsliderConfig   = load_yaml 'src/config/formslider.yml'
+    formsliderConfig   = load_yaml(configFile)
     formsliderBasePath = "formslider/#{formsliderConfig.version}"
 
     result = ''
@@ -13,7 +13,7 @@ module.exports =
       slide.id    = slide.id || slide.role
 
       result += @render_partial("#{formsliderBasePath}/slide", config: slide)
-      # very strange variable scoing behaviour occured here, scope merges
+      # very strange variable scoping behaviour occures here, scope merges
       # -> see slide.haml
     result
 
