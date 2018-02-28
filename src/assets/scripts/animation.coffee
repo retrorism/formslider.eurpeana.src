@@ -9,3 +9,5 @@ class @Animation
       $el.options = $.extend(true, {}, @options)
       for data_key, value of $el.data()
         $el.options[data_key]=value if data_key of @options
+
+    return null # dont return loops in coffee -> performance
