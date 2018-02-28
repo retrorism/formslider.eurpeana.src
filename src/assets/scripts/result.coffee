@@ -32,16 +32,16 @@ class @ResultHandler extends AbstractFormsliderPlugin
       
       slide    = @slideById(questionId)
       question = $('.headline', slide).text()
-      answer   = $(".text.#{value}", slide).text()
-      additionalResult = $(slide).data('result-text')
+      answer   = $(".text.#{answerId}", slide).text()
+      additionalResultText = $(slide).data('result-text')
 
       successClass = if correct then 'right' else 'false'
 
       result+= "<div class='result #{successClass}'>"
 
       result+= "<div class='sub-headline'>#{question}</div>"
-      result+= "Correct answer: <b>#{answer}</b><br><br>"
-      result+= "<div class='info'>#{additionalResult}</div>" if additionalResult
+      result+= "Correct: <b>#{answer}</b><br><br>"
+      result+= "<div class='info'>#{additionalResultInfo}</div>" if additionalResultText
 
       result+= "</div>"
 
